@@ -11,7 +11,7 @@ using namespace std;
 
 // 下列注释解释，输入为 [1,2,3]
 /*
- * select 函数中sub_queue的存储过程如下（subsets 函数第一轮循环的情况）
+ * select 函数中subset_queue的存储过程如下（subsets 函数第一轮循环的情况）
  * [1]
  * [1],[1,2],[1.3]
  * [1,2],[1.3]
