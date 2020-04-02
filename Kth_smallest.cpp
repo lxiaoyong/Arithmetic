@@ -20,24 +20,17 @@ struct TreeNode {
 int kthSmallest_stack(TreeNode * root,int k){
     stack<TreeNode *> s;
     while(true){
+        // 因是搜索树，故left总是更小的数
         while(root!= nullptr){
             s.push(root);
             root=root->left;
         }
+        root = s.top(); //第 n 次循环的top 既是树中的第n小的数
+        s.pop();
         --k;
-        if(k==0){
-            return s.top()->val;
-        }else{
-            if(s.top()->right!=nullptr){
-                TreeNode *_top =s.top();
-                s.pop();
-                s.push(_top->right);
-                root=s.top()->left;
-            }else{
-                s.pop();
-                root=nullptr;
-            }
-        }
+        if(k==0)
+            return root->val;
+        root = root->right; // 若root->right!=nullptr，由二叉搜索树的性质可知其值比此时栈中的top的值更小
     }
 }
 
