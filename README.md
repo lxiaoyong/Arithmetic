@@ -15,3 +15,4 @@
 2020.4.17 | 跳跃游戏 | CanJumpToLast.cpp | 中
 2020.4.19 | 宝石与石头 | numberOfJewels.cpp | 易
 2020.4.24 | 解压缩编码列表 | decompressRLElist.cpp | 易
+2020.6.6  | IP地址无效化 | defangIPaddr.cpp | 易
