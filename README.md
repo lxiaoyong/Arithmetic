@@ -21,3 +21,4 @@
 2020.7.27 | 括号生成  | generateParenthesis.cpp | 中
 2020.7.28 | 无重复字符的最长子串 | lengthOfLongestSubstring.cpp | 中
 2020.7.29 | Z字形变换 | ZConvert.cpp | 中
+2020.7.31 | 制造字母异位词的最小步骤数 | minSteps.cpp | 中
