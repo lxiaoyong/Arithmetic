@@ -25,3 +25,4 @@
 2020.8.1  | 检查平衡性 | isBalancedTree.cpp | 易
 2020.8.2 | 二叉树的层序遍历 | levelOrder.cpp | 中
 2020.8.3 | 二叉搜索树迭代器 | BSTIterator.cpp | 中
+2020.8.4 | 验证二叉搜索树 | isValidBST.cpp | 中
