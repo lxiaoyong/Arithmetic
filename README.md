@@ -27,3 +27,5 @@
 2020.8.3 | 二叉搜索树迭代器 | BSTIterator.cpp | 中
 2020.8.4 | 验证二叉搜索树 | isValidBST.cpp | 中
 2020.8.5 | 特定深度节点链表 | listOfDepth.cpp | 中
+2020.8.6 | 判定字符是否唯一 | isUniqueChar.cpp | 易
+2020.8.6 | 判断是否互为字符重排 | checkPermutation.cpp | 易
