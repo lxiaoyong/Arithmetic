@@ -12,7 +12,7 @@ using namespace std;
 
 // used 记录输入的各个数字是否使用过，used在整个递归过程中是同步的。
 // in_vector 存储所求的全排列中的各个排列组合，在整个递归过程不同步
-void fds(vector<vector<int>> &permute_vector, vector<int>num, vector<bool> &used, vector<int> in_vector){
+void fds(vector<vector<int>> &permute_vector,const vector<int> &num, vector<bool> &used, vector<int> in_vector){
     if(in_vector.size() == num.size()){
         permute_vector.push_back(in_vector);
         return;
@@ -35,10 +35,7 @@ void fds(vector<vector<int>> &permute_vector, vector<int>num, vector<bool> &used
 
 vector<vector<int>> permute(vector<int>& nums) {
     vector<vector<int>> permute_vector;
-    vector<bool> used;
-    for(int i=0;i<nums.size();++i){
-        used.push_back(false);
-    }
+    vector<bool> used(nums.size(), false);
     vector<int> t;
     fds(permute_vector, nums, used, t);
     return permute_vector;
