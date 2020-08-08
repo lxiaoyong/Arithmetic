@@ -8,13 +8,13 @@ struct TreeNode {
     TreeNode *right;
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
-TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+TreeNode* lowestCommonAncestorOfBST(TreeNode* root, TreeNode* p, TreeNode* q) {
     if(root == nullptr || root==p || root==q) return root;
     TreeNode *left= nullptr,*right= nullptr;
     if(p->val<root->val || q->val<root->val)
-        left=lowestCommonAncestor(root->left,p,q);
+        left=lowestCommonAncestorOfBST(root->left,p,q);
     if(p->val>root->val || q->val>root->val)
-        right=lowestCommonAncestor(root->right,p,q);
+        right=lowestCommonAncestorOfBST(root->right,p,q);
     if(left!= nullptr && right!= nullptr) return root;
     if(left== nullptr) return right;
     if(right== nullptr) return left;
