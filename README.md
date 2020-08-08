@@ -30,3 +30,4 @@
 2020.8.6 | 判定字符是否唯一 | isUniqueChar.cpp | 易
 2020.8.6 | 判断是否互为字符重排 | checkPermutation.cpp | 易
 2020.8.7 | 二叉搜索树的最近公共祖先 | lowestCommonAncestorOfBST.cpp | 易
+2020.8.8 | 从前序与中序遍历序列构造二叉树 | constructBinaryTreeFromPreorderAndInorderTraversal.cpp | 中
