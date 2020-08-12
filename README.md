@@ -33,3 +33,4 @@
 2020.8.8 | 从前序与中序遍历序列构造二叉树 | constructBinaryTreeFromPreorderAndInorderTraversal.cpp | 中
 2020.8.9 | 反转链表 | reverseList.cpp | 易
 2020.8.11 | 树的子结构 | isSubStructure.cpp | 中
+2020.8.12 | 丑数 | nth_UglyNumber.cpp | 中
