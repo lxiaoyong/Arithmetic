@@ -13,7 +13,24 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(nullptr) {}
 };
-
+// 双指针
+ListNode *detectCycle(ListNode *head) {
+    ListNode* slow=head,*fast=head;
+    while(fast!= nullptr && fast->next!= nullptr){
+        fast=fast->next->next;
+        slow=slow->next;
+        if(slow==fast){
+            fast=head;
+            while(fast!=slow){
+                fast=fast->next;
+                slow=slow->next;
+            }
+            return slow;
+        }
+    }
+    return nullptr;
+}
+/*
 ListNode * detectCycle(ListNode *head) {
     set<ListNode*> nodes;
     ListNode *_h=head;
@@ -28,4 +45,4 @@ ListNode * detectCycle(ListNode *head) {
         _h=_h->next;
     }
     return nullptr;
-}
+}*/
