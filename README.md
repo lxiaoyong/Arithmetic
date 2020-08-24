@@ -10,7 +10,7 @@
 2020.4.7 | 盛最多水的容器| max_area.cpp | 中
 2020.4.9 | 二叉树的镜像树 | mirror_tree.cpp | 易
 2020.4.12| 二叉树的最近公共父节点 | lowestCommonAncestor.cpp | 中
-2020.4.13 | 环形链表 | detectCycle.cpp | 易
+2020.4.13 | 环形链表II | detectCycle.cpp | 易
 2020.4.15 | LRU缓存机制 | LRUCache.cpp | 中 
 2020.4.17 | 跳跃游戏 | CanJumpToLast.cpp | 中
 2020.4.19 | 宝石与石头 | numberOfJewels.cpp | 易
@@ -42,3 +42,4 @@
 2020.8.20 | 扫雷游戏 | minesweeper.cpp | 中
 2020.8.21 | 相交链表 | get_intersection_list_node.cpp | 易
 2020.8.22 | 对称二叉树 | symmetric_tree.cpp | 易
+2020.8.24 | 环形链表I | has_cycle.cpp | 易
