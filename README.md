@@ -48,3 +48,4 @@
 2020.8.29 | 多数元素 | majority_element.cpp | 易
 2020.8.30 | 二叉搜索树与双向链表 | tree_to_double_list.cpp | 中
 2020.8.31 | 字符串的排列 | string_permutation.cpp | 中
+2020.9.1 | 最小的k个数 | get_least_k_numbers.cpp | 中
