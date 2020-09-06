@@ -53,3 +53,4 @@
 2020.9.3 | 只出现一次的数字III | single_numbers_III.cpp | 中
 2020.9.4 | 在排序数组中查找数字I | search_number_I.cpp | 易
 2020.9.5 | 滑动窗口的最大值 | sliding_window_maximum.cpp | 难
+2020.9.6 | 二叉搜索树的第K大节点 | kth_largest_in_BST.cpp | 易
