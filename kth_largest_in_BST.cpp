@@ -9,6 +9,7 @@ struct TreeNode {
     explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 void dfs(TreeNode* node,int &k,int &result){
+    if(k==0 ) return;
     if(node){
         dfs(node->right,k,result);
         --k;
