@@ -56,3 +56,4 @@
 2020.9.6 | 二叉搜索树的第K大节点 | kth_largest_in_BST.cpp | 易
 2020.9.7 | 0~n-1中缺失的数字 | missing_number.cpp | 易
 2020.9.9 | 翻转单词顺序 | reverse_words.cpp | 易
+2020.9.12 | 圆圈中最后剩下的数字 | last_remaining_number.cpp | 易
