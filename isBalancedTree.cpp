@@ -12,32 +12,26 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
+/*
 int computeSubtreeDepth(TreeNode *root){
     if(root== nullptr) return 0;
-    int leftDepth=0,rightDepth=0;
-    if(root->left!= nullptr){
-        ++leftDepth;
-        leftDepth+=computeSubtreeDepth(root->left);
-    }
-    if(root->right!= nullptr){
-        ++rightDepth;
-        rightDepth+=computeSubtreeDepth(root->right);
-    }
-    return max(leftDepth,rightDepth);
+    return max(computeSubtreeDepth(root->left),computeSubtreeDepth(root->right))+1;
 }
-
 bool isBalanced(TreeNode* root) {
     if(root== nullptr) return true;
-    if(!isBalanced(root->left)) return false;
-    if(!isBalanced(root->right)) return false;
-    int leftDepth=0,rightDepth=0;
-    if(root->left!= nullptr){
-        ++leftDepth;
-        leftDepth+=computeSubtreeDepth(root->left);
-    }
-    if(root->right!= nullptr){
-        ++rightDepth;
-        rightDepth+=computeSubtreeDepth(root->right);
-    }
+    return abs(computeSubtreeDepth(root->left)-computeSubtreeDepth(root->right))<= 1 &&
+        isBalanced(root->left) && isBalanced(root->right);
+}*/
+
+
+int computeSubtreeDepth(TreeNode *root){
+    if(root== nullptr) return 0;
+    return max(computeSubtreeDepth(root->left),computeSubtreeDepth(root->right))+1;
+}
+bool isBalanced(TreeNode* root) {
+    if(root== nullptr) return true;
+    if(!isBalanced(root->left) || !isBalanced(root->right)) return false;
+    int leftDepth=computeSubtreeDepth(root->left);
+    int rightDepth=computeSubtreeDepth(root->right);
     return abs(leftDepth - rightDepth) <= 1;
 }
