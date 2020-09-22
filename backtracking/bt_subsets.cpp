@@ -13,7 +13,7 @@ void backtrack(int index,vector<int >& nums,
     }
 
 }
-vector<vector<int>> subsets(vector<int>& nums) {
+vector<vector<int>> bt_subsets(vector<int>& nums) {
     vector<vector<int >> result{{}};
     vector<int> t;
     backtrack(0,nums,result,t );
