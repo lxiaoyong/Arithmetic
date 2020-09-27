@@ -63,3 +63,4 @@
 2020.9.22 | 活字印刷 | backtracking/num_tile_possibilities.cpp | 中
 2020.9.23 | 组合总和 | backtracking/combination_sum.cpp | 中
 2020.9.26 | 黄金矿工 | backtracking/get_maximum_gold.cpp | 中
+2020.9.27 | 括号 | generate_parenthesis.cpp | 中
