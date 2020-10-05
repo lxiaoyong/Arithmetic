@@ -20,7 +20,7 @@ void gp_backtrack(vector<string> &result,string &s,int left,int right){
         s.pop_back();
     }
 }
-vector<string> generateParenthesis(int n) {
+vector<string> bt_generateParenthesis(int n) {
     vector<string> result;
     string s;
     gp_backtrack(result,s,n,n);
