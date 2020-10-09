@@ -68,3 +68,4 @@
 2020.10.4 | 两数之和 | add_two_numbers.cpp | 中
 2020.10.5 | 四数之和 | four_sum.cpp | 中
 2020.10.7 | 颜色分类 | sort_colors.cpp | 中
+2020.10.9 | 所有可能的路径 | backtracking/all_paths_source_target.cpp | 中
