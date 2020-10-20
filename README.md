@@ -73,3 +73,4 @@
 2020.10.13 | 两两交换链表中的节点 | swap_pairs.cpp | 中
 2020.10.15 | 填充每个节点的下一个右侧节点指针 | populating_next_right_pointers.cpp | 中
 2020.10.16 | 有序数组的平方 | sorted_squares.cpp | 易
+2020.10.20 | 删除链表的倒数第N个节点 | remove_Nth_from_end_of_list.cpp | 中
