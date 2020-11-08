@@ -9,6 +9,37 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+ListNode* merge_two_lists(ListNode* first,ListNode* second){
+    auto pre_head = new ListNode(-1);
+    ListNode* pre = pre_head;
+    while(first!=nullptr && second!=nullptr){
+        if(first->val < second->val){
+            pre->next=first;
+            pre=first;
+            first=first->next;
+        }else{
+            pre->next=second;
+            pre=second;
+            second=second->next;
+        }
+    }
+    if(first!=nullptr) pre->next=first;
+    else pre->next=second;
+    auto head = pre_head->next;
+    delete pre_head;
+    return head;
+}
+ListNode* merge(std::vector<ListNode*>& lists,int left,int right){
+    if(left==right-1) return lists[left];
+    int mid = left+(right-left)/2;
+    return merge_two_lists(merge(lists,left,mid),merge(lists,mid,right));
+}
+ListNode* mergeKLists(std::vector<ListNode*>& lists) {
+    int size = lists.size();
+    if(size==0) return nullptr;
+    return merge(lists,0,size);
+}
+/*
 ListNode* mergeKLists(std::vector<ListNode*>& lists) {
     int size = lists.size();
     if(size==0 ) return nullptr;
@@ -40,4 +71,4 @@ ListNode* mergeKLists(std::vector<ListNode*>& lists) {
     ListNode *head = pre_head->next;
     delete pre_head;
     return head;
-}
+}*/
